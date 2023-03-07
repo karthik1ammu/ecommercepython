@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block metadescription %}
+            {{ product.description|truncatewords:155 }}
+{% endblock %}
+{% block title %}
+
+             {{ product.name }} - ABC store
+{% endblock %}
+{% block content %}
+    <div>
+        <div>
+            <p><a href="{% url 'shop:allProdCat' %}">HOME</a> |
+                <a href="{{product.category.get_url}}">{{product.category}}</a> |
+                {{product.name}}
+            </p><br>
+            <div class="row">
+
+                     <div class="col-sm-6 col-md-6 col-xs-6">
+                         <div style="min-width:18rem">
+                             <img  src="{{product.image.url}}" width="500px" height="300px"  alt="{{product.name}}">
+                         </div>
+                     </div>
+                    <div class="col-sm-6 col-md-6 col-xs-6">
+                         <div>
+                                  <h1 class="my_prod_title">{{product.name}}</h1>
+                                    <p>${{product.price}}</p>
+                                     <p > PRODUCT DESCRIPTION</p>
+                                     <h1 class="des">{{product.description}}</h1>
+                                     {% if product.stock <= 0 %}
+                                     <p><b>OUT OF STOCK</b></p>
+                                      {% else %}
+                                     <a href="{% url 'cart:add_cart' product.id %}"> ADD TOGO CART</a>
+                                    {% endif %}
+                         </div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

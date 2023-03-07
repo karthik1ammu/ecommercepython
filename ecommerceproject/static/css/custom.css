@@ -1,0 +1,116 @@
+
+
+body{
+    font-family: 'Lobster', cursive;
+}
+
+.nav-item{
+    letter-spacing : .2em;
+    font-size : 14px;
+    text-transform : uppercase;
+}
+
+.dropdown-item{
+    letter-spacing : .2em;
+    font-size : 14px;
+    text-transform : uppercase;
+}
+/*** category ***/
+.my_row_class{
+        padding-top : 15px;
+
+
+}
+
+.my_row_class .mx_auto{
+        color : #000;
+        font-size : 12px;
+
+}
+.my_image{
+    width: 100%;
+    height: auto;
+    }
+.my_title{
+      font-size:16px;
+      letter-spacing: .2em
+ }
+ .my_image_padding{
+ padding: 5px;
+ }
+
+.my_bottom_margin{
+     margin-bottom:10px;
+     }
+.my_prod_title{
+        text-align: center;
+         font-size: 16px;
+      text-transform : uppercase;
+      letter-spacing: .2em;
+      color:#009900;
+      font-size:50px;
+      font-weight:bold;
+      }
+.des{
+font-family: 'Sacramento', cursive;
+font-size :  14px;
+}
+.my_search_text{
+padding-top : 20px;
+}
+/*** cart ***/
+.my_table{
+        win-width:400px;
+        font-size=14px;
+        }
+.my_thead{
+    font-weight:normal;
+    text-transform:uppercase;
+    letter-spacing:.2em;
+    background-color:#f8f8fa!important;
+}
+
+.cart_img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+.my_custom_button{
+border-radius: 2px;
+ background-color: #4CAF50;
+}
+
+
+/* CSS */
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
